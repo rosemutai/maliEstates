@@ -4,15 +4,27 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/tw-elements-react/dist/js/**/*.js',
   ],
   theme: {
     extend: {
+      colors: {
+        'secondary': '#FFAC12',
+        'greyish': '#E4E4E4'
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': "url('/images/house1.jpg')",
+        'team-image': "url('/images/team.jpg')",
+        'house-image': "url('/images/house2.jpg')",
+        'about-image': "url('/images/hse.jpg')",
+
+      },
+      spacing: {
+        '2/3': '66.666667%'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tw-elements-react/dist/plugin.cjs")
+  ],
 }
