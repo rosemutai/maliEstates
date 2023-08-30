@@ -71,9 +71,9 @@ const Signup = () => {
           }}
         />
       </div>}
-      <div className='flex w-[60%] mx-auto  mb-20 bg-white h-[600px] py-6 px-16 shadow-md space-x-8'>
-        <div className='left-section w-[48%] bg-about-image bg-cover bg-center rounded-tr-[40px] rounded-bl-[40px]'></div>
-        <div className='right-section w-1/2 ml-2 flex flex-col'>
+      <div className='flex w-full md:w-[60%] mx-auto  mb-20 bg-white h-[600px] py-6 px-5 md:px-16 shadow-md space-x-8'>
+        <div className='left-section hidden md:block w-[48%] bg-about-image bg-cover bg-center rounded-tr-[40px] rounded-bl-[40px]'></div>
+        <div className='right-section w-full md:w-1/2 shadow md:shadow-none md:ml-2 ml-0 flex flex-col px-2 md:px-0'>
           <h2 className="font-semibold text-secondary text-3xl">
             Contact Us
           </h2>
