@@ -4,7 +4,7 @@ import React from 'react'
 
 const Reviews = () => {
   return (
-    <div className="w-full mx-auto flex flex-col white py-8 h-[400px]  md:h-screen pl-8 md:pl-16 items-center space-y-6">
+    <div id='testimonies' className="w-full mx-auto flex flex-col white py-8 h-[400px]  md:h-screen pl-8 md:pl-16 items-center space-y-6">
       <div className="left-section md:w-1/2 mx-auto md:items-center flex flex-col space-y-6 pt-10 md:pt-20 ">
         <div className="w-44 sm:mx-auto border-none h-[3px] bg-gradient-to-r from-secondary to-black/80 flex-none"></div>
         <p className="md:w-6/12 sm:w-3/4 sm:mx-auto text-black font-semibold text-sm md:text-lg">
