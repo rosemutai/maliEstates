@@ -181,7 +181,7 @@ const PlacesToLive = () => {
           <CiSearch className="text-white text-xl" />
         </button>
       </form>
-      <div className="cards min-h-screen grid grid-cols-1 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 gap-4">
+      <div id="listings" className="cards min-h-screen grid grid-cols-1 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 gap-4">
         {properties &&
           Array.from(properties).map((property) => (
             <div
