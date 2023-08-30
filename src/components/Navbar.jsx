@@ -7,7 +7,7 @@ import { CiMenuFries } from 'react-icons/ci'
 import { FaTimes } from "react-icons/fa";
 import { Transition } from "@headlessui/react";
 import * as Scroll from "react-scroll";
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll/modules'
 
 
 const Navbar = () => {
@@ -43,26 +43,30 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="aboutSection" spy={true} smooth={true} offset={50} duration={500}
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
           className="hover:text-secondary transition-all duration-200 hover:border-b hover:border-secondary"
         >
           About
         </Link>
         <Link
-          href="/"
+          to="#listings"
           className="hover:text-secondary transition-all duration-200 hover:border-b hover:border-secondary"
         >
           Listings
         </Link>
 
         <Link
-          href="/"
+          to="#testimonies"
           className="hover:text-secondary transition-all duration-200 hover:border-b hover:border-secondary"
         >
           Testimonies
         </Link>
         <Link
-          href="/contact"
+          to="/contact"
           className="bg-secondary text-white rounded-md px-6 py-2 text-center w-36 flex  group justify-center
             items-center hover:bg-white hover:text-secondary border-none transition-all duration-200 "
         >
@@ -82,21 +86,24 @@ const Navbar = () => {
           className="nav-links mobile h-screen md:hidden flex flex-col space-y-12 text-white bg-secondary
           top-16 pl-3 right-0 w-[70%] absolute z-20 backdrop-blur-md transition ease-in-out"
         >
-          <Link href="/" className="text-white transition-all duration-200">
+          <Link to="/" className="text-white transition-all duration-200">
             Home
           </Link>
-          <Link href="/" className="text-white transition-all duration-200">
+          <Link
+            to="#aboutSection"
+            className="text-white transition-all duration-200"
+          >
             About
           </Link>
-          <Link href="/" className="text-white transition-all duration-200">
+          <Link to="#listings" className="text-white transition-all duration-200">
             Listings
           </Link>
 
-          <Link href="/" className="text-white transition-all duration-200 ">
+          <Link href="#testimonies" className="text-white transition-all duration-200 ">
             Testimonies
           </Link>
           <Link
-            href="/contact"
+            to="/contact"
             className="text-secondary bg-white rounded-md px-6 py-2 text-center w-36 flex  group justify-center
               items-center hover:border-b-white hover:text-secondary border-none transition-all duration-200 "
           >
